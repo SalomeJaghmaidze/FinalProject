@@ -29,7 +29,7 @@ const Services =()=> {
                         <label htmlFor="description">Description*</label>
                         <input type="text" name="description"/>
 
-                        <label for="image">Image*</label>
+                        <label htmlFor="image">Image*</label>
                         <input type="file"
                             id="image" name="image"
                             accept="image/png, image/jpeg"></input>

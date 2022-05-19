@@ -18,7 +18,7 @@ const AddService =()=> {
       {
         Servicelist.map(service=>{
             return(
-                <Card>
+                <Card key={service.id}>
                     <CardInfo>
                        <CardTitle>{service.title}</CardTitle>
                        <CardDescription>{service.description}</CardDescription>
