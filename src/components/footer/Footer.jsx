@@ -8,7 +8,8 @@ import {
     Col,
     Header,
     List,
-    Item
+    Item,
+    Link
 } from './FooterElements'
 
 const Footer =()=> {
@@ -18,32 +19,32 @@ const Footer =()=> {
                     <Col>
                         <Header>Company</Header>
                             <List>
-                                <Item> Blog </Item>
-                                <Item> Services </Item>
+                                <Item><Link href="#">Posts</Link></Item>
+                                <Item><Link href="#">Services</Link></Item>
                             </List>
                     </Col>
 
                     <Col>
                         <Header> Contact info </Header>
                             <List>
-                                <Item> Email us </Item>
-                                <Item> FAQ </Item>
+                                <Item><Link href="#">Email us</Link></Item>
+                                <Item><Link href="#">FAQ</Link></Item>
                             </List>
                     </Col>
 
                     <Col>
                         <Header> Career </Header>
                             <List>
-                                <Item> Vacancy </Item>
+                                <Item><Link href="#">Vacancy</Link></Item>
                             </List>
                     </Col>
 
                     <Col>
                         <Header> Follow us</Header>
                             <List>
-                                <Item><FaTwitter></FaTwitter></Item>
-                                <Item><FaLinkedin></FaLinkedin></Item>
-                                <Item><FaFacebook></FaFacebook></Item>
+                                <Item><Link href="#"><FaTwitter></FaTwitter></Link></Item>
+                                <Item><Link href="#"><FaLinkedin></FaLinkedin></Link></Item>
+                                <Item><Link href="#"><FaFacebook></FaFacebook></Link></Item>
                             </List>
                     </Col>
                 </Row>

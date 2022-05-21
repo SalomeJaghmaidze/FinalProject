@@ -27,7 +27,15 @@ const Services =()=> {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-    }
+        fetch('ServiceMockups.json', {
+            method: 'POST',
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data)
+        }).then(() => {
+            console.log('new service added')
+        })
+        }
+    
     
     const [modal, setModal] = useState(false);
     const openServiceForm =()=> {
@@ -65,7 +73,8 @@ const Services =()=> {
                                     <LabelImage htmlFor="image">Image*</LabelImage>
                                     <InputFile type="file"
                                     id="image" name="image"
-                                    accept="image/png, image/jpeg"></InputFile>
+                                    accept="image/png, image/jpeg" {...register("image", { required: true, maxLength: 1 })}></InputFile>
+                                    {errors.image && errors.image.type === "required" && <span>This is required</span>}
                                     <InputImage type="image" src="" alt=""/>
                                 </Content>
                                 <Buttons>

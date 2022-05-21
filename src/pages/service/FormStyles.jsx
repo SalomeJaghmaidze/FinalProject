@@ -9,6 +9,7 @@ export const Modal = styled.div`
     bottom: 0;
     position: fixed;
     z-index: 99999;
+    overflow-y: auto;
 `
 
 export const Overlay = styled.div`
@@ -21,6 +22,8 @@ export const Overlay = styled.div`
     position: fixed;
     z-index: 99999;
     background: rgba(49,49,49,0.8);
+    overflowY: auto;
+    zIndex: 1000,
 `
 
 export const Form = styled.form`
@@ -39,7 +42,6 @@ export const Form = styled.form`
     flex-direction: column;
     background-color: #FFF;
 	border-radius: 10px;
-    padding: 20px;
 	box-shadow: 0 10px 20px 0 rgba(#999, .25);
         @media screen and (max-width: 640px) {
             width: 450px;
@@ -56,10 +58,10 @@ export const Form = styled.form`
 export const Content = styled.div`
    display: flex;
    flex-direction: column;
-   padding: 14px;
+   padding: 20px;
    border-top: 2px solid #F1F1F1;
    border-bottom: 2px solid #F1F1F1;
-   line-height: 3.4;
+   line-height: 4.0;
    padding-bottom: 25px;
 `
 export const Header = styled.div`
@@ -67,7 +69,7 @@ export const Header = styled.div`
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   padding: 10px 0;
+   padding: 20px;
 `
 
 export const Heading = styled.h1`

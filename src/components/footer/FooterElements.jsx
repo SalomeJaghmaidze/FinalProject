@@ -61,4 +61,9 @@ export const Item = styled.li`
  margin: 10px 0;
 `
 
+export const Link = styled.a`
+ text-decoration: none;
+ color: black;
+`;
+
 
