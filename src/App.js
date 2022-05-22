@@ -2,8 +2,9 @@ import './App.css';
 import Posts from './pages/posts/Posts';
 import Services from './pages/service/Index';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
-import Header from './components/header/Header';
+import Header from './components/header/Index';
 import Footer from './components/footer/Footer';
+
 function App() {
   return (
     <div className="App">

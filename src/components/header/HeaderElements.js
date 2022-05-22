@@ -5,7 +5,7 @@ import {FaBars} from 'react-icons/fa'
 
 export const Nav = styled.nav`
  height: 50px;
- width: 80%;
+ width: 90%;
  display: flex;
  justify-content: flex-start;
  padding: 0.5rem;
@@ -61,3 +61,4 @@ export const NavMenu = styled.div`
     display: none;
  }
 `
+

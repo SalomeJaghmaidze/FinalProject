@@ -1,4 +1,5 @@
 import React from "react";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {FaTwitter} from "react-icons/fa"
 import {FaFacebook} from "react-icons/fa"
 import {FaLinkedin} from "react-icons/fa"
@@ -15,12 +16,13 @@ import {
 const Footer =()=> {
     return (
             <Container>
+
                 <Row>
                     <Col>
                         <Header>Company</Header>
                             <List>
-                                <Item><Link href="#">Posts</Link></Item>
-                                <Item><Link href="#">Services</Link></Item>
+                                <Item><Link href="/Posts">Posts</Link></Item>
+                                <Item><Link href="/Services">Services</Link></Item>
                             </List>
                     </Col>
 
@@ -48,6 +50,7 @@ const Footer =()=> {
                             </List>
                     </Col>
                 </Row>
+             
             </Container>
     )
 }

@@ -55,15 +55,21 @@ export const Header = styled.h4`
 
 export const List = styled.ul`
  list-style-type: none;
+ margin-bottom: 10px;
 `
 
 export const Item = styled.li`
- margin: 10px 0;
+
+
 `
 
 export const Link = styled.a`
  text-decoration: none;
  color: black;
-`;
+ text-align: left;
+ padding: 2px 1px 0;
+ font-family: 'Poppins', sans-serif;
+ font-size: 14px;
+`
 
 
