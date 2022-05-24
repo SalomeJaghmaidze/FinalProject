@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import {
     Nav,
     NavLink,
-    NavMenu
+    NavMenu,
+    NavHeader
 } from './HeaderElements'
 import { Burger} from './burger/Burger';
 import {Menu} from './menu/Menu'
+
 const Header =()=> {
     const [open, setOpen] = React.useState(false);
     const node = React.useRef();
     return (
-        <header>
+        <NavHeader>
             <Nav>
                 <NavLink to='/'>
                     <h1>Logo</h1>
@@ -28,7 +30,7 @@ const Header =()=> {
                     <Menu open={open} setOpen={setOpen} />
                 </div>
             </Nav>
-        </header>
+        </NavHeader>
     )
 }
 

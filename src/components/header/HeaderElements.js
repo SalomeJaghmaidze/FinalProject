@@ -2,17 +2,23 @@ import styled from 'styled-components'
 import { NavLink as Link } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 
-
+export const NavHeader = styled.div`
+@media screen and (max-width: 1008px) {
+    display: flex;
+    justify-content: center;
+}
+`
 export const Nav = styled.nav`
  height: 50px;
  width: 90%;
  display: flex;
  justify-content: flex-start;
  padding: 0.5rem;
- margin-top: 30px;
 
  @media screen and (max-width: 1008px) {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 ` 
 

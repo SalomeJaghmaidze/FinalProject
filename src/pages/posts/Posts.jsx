@@ -1,7 +1,9 @@
+import Banners from "../../components/banner/Banner";
+
 const Posts = () => {
     return (
         <div>
-        <h1></h1>
+        <Banners></Banners>
         </div>
     )
 }
