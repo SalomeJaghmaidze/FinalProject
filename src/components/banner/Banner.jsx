@@ -3,8 +3,8 @@ import {Banner} from './BannerStyles'
 
 const Banners =()=> {
     return (
-       <Banner>
-           
+       <Banner >
+      
        </Banner>
     )
 }
