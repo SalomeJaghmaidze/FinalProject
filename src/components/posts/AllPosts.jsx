@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PostCard from "../posts/Post";
 import {
     Container,
@@ -16,10 +16,12 @@ const AllPosts =()=>{
 
     const [posts, setPosts] = useState([])
     
+    useEffect(()=>{
     fetch('https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR1KfX7T1zIiLSiuBBL4Yf_qNqPD23IecvFCMHoz8VyLEQT32irb9B6-RHo')
         .then(response => response.json())
         .then(data => setPosts(data));
-    
+      },[])
+
     return (
         <Container>
       {
