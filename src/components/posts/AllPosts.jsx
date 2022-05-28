@@ -17,7 +17,7 @@ const AllPosts =()=>{
     const [posts, setPosts] = useState([])
     
     useEffect(()=>{
-    fetch('https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR1KfX7T1zIiLSiuBBL4Yf_qNqPD23IecvFCMHoz8VyLEQT32irb9B6-RHo')
+    fetch('https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR1ghPZYf9Jz13-DNSFMx3u9NSvg755XlHUd9ls8WtpVsq3KbY2NmxP-sKA')
         .then(response => response.json())
         .then(data => setPosts(data));
       },[])

@@ -1,13 +1,22 @@
-export const ServiceCard =(props)=> {
+import {
+  Card,
+  CardInfo,
+  CardTitle,
+  CardDescription,
+  CardImgSpace,
+  Image,
+} from "./Styles";
+
+export const ServiceCard = (props) => {
   return (
-      <div>
-          <div>
-              <h1>{props.title}</h1>
-              <p>{props.description}</p>
-          </div>
-          <div>
-              <img src={props.image} alt="" />
-          </div>
-      </div>
-  )
-}
+    <Card key={props.key}>
+      <CardInfo>
+        <CardTitle>{props.title}</CardTitle>
+        <CardDescription>{props.description}</CardDescription>
+      </CardInfo>
+      <CardImgSpace>
+        <Image src={props.image}></Image>
+      </CardImgSpace>
+    </Card>
+  );
+};

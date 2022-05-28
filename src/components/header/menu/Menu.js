@@ -1,17 +1,18 @@
-import React from 'react';
-import { StyledMenu, LinkNav, Page } from './Menu.styled';
+import React from "react";
+import { StyledMenu, LinkNav, Page } from "./Menu.styled";
 
-const Menu = ({ open }) => {
-    return (
-      <StyledMenu open={open}>
-        <LinkNav to='/Posts'>
-                    <Page>Main</Page>
-                </LinkNav>
-                <LinkNav to='/Services'>
-                    <Page>Services</Page>
-                </LinkNav>
-      </StyledMenu>
-    )
-  }
+const Menu = ({ open, setOpen }) => {
+  
+  return (
+    <StyledMenu open={open}>
+      <LinkNav to="/Posts" onClick={()=>{setOpen(false)}}>
+        <Page>Main</Page>
+      </LinkNav>
+      <LinkNav to="/Services" onClick={()=>{setOpen(false)}}>
+        <Page>Services</Page>
+      </LinkNav>
+    </StyledMenu>
+  );
+};
 
-  export {Menu}
+export { Menu };

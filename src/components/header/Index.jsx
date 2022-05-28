@@ -11,6 +11,7 @@ import {Menu} from './menu/Menu'
 const Header =()=> {
     const [open, setOpen] = React.useState(false);
     const node = React.useRef();
+    
     return (
         <NavHeader>
             <Nav>
@@ -19,9 +20,9 @@ const Header =()=> {
                 </NavLink>
                 <NavMenu>
                 <NavLink to='/Posts'>
-                    <h1>Main</h1>
+                    <h1 >Main</h1>
                 </NavLink>
-                <NavLink to='/Services'>
+                <NavLink to='/Services' >
                     <h1>Services</h1>
                 </NavLink>
                 </NavMenu>
