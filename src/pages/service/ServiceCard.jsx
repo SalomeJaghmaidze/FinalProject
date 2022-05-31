@@ -9,7 +9,7 @@ import {
 
 export const ServiceCard = (props) => {
   return (
-    <Card key={props.key}>
+    <Card key={props.id}>
       <CardInfo>
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>

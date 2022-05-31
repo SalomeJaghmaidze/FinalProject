@@ -1,12 +1,8 @@
-import React from "react"
-import {Banner} from './BannerStyles'
+import React from "react";
+import { Banner } from "./BannerStyles";
 
-const Banners =()=> {
-    return (
-       <Banner >
-      
-       </Banner>
-    )
-}
+const Banners = () => {
+  return <Banner></Banner>;
+};
 
-export default Banners
+export default Banners;

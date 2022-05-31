@@ -1,6 +1,7 @@
 import { Button } from "./ServiceStyles";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
+import { storage } from "../../firebase";
 import "./Form.css";
 import {
   Modal,
@@ -25,6 +26,8 @@ import {
 const FormModal = (props) => {
   const [services, setService] = useState([]);
 
+  const [image, setImage] = useState("");
+
   const {
     register,
     handleSubmit,
@@ -33,9 +36,23 @@ const FormModal = (props) => {
   } = useForm();
 
   const onSubmit = (data) => {
-    props.services(data);
-    openServiceForm();
-    reset();
+    var image = data.image[0];
+    storage
+      .ref(`/images/${image.name}`)
+      .put(image)
+      .on(
+        "state_changed",
+        function (res) {
+          let url = "https://firebasestorage.googleapis.com/v0/b/services-f844e.appspot.com/o/images%2F";
+          let image = url + res.ref.name + "?alt=media";
+          data.image = image;
+          props.services(data);
+
+        },
+        alert
+      );
+      openServiceForm();
+     reset();
   };
 
   const [modal, setModal] = useState(false);
@@ -48,6 +65,7 @@ const FormModal = (props) => {
   } else {
     document.body.classList.remove("active-modal");
   }
+
   return (
     <>
       <Button onClick={openServiceForm}>Add New Service</Button>

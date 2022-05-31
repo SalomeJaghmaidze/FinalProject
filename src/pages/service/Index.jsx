@@ -13,7 +13,6 @@ const Services = () => {
     setService(() => {
       return [...services, item];
     });
-    console.log(item);
   };
   return (
     <>
