@@ -5,7 +5,7 @@ const Menu = ({ open, setOpen }) => {
   
   return (
     <StyledMenu open={open}>
-      <LinkNav to="/Posts" onClick={()=>{setOpen(false)}}>
+      <LinkNav to="/" onClick={()=>{setOpen(false)}}>
         <Page>Main</Page>
       </LinkNav>
       <LinkNav to="/Services" onClick={()=>{setOpen(false)}}>
