@@ -18,10 +18,10 @@ const Services = () => {
     <>
       <FormModal services={addService}></FormModal>
       <Container>
-        {services.map((service) => {
+        {services.map((service, index) => {
           return (
             <ServiceCard
-              key={service.id}
+              key={index}
               title={service.title}
               description={service.description}
               image={service.image}

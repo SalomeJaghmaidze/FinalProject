@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, NavLink, NavMenu, NavHeader } from "./HeaderElements";
+import { Nav, NavLink, NavMenu, NavHeader, NavLogo } from "./HeaderElements";
 import { Burger } from "./burger/Burger";
 import { Menu } from "./menu/Menu";
 
@@ -10,11 +10,11 @@ const Header = () => {
   return (
     <NavHeader>
       <Nav>
-        <NavLink to="/">
+        <NavLogo to="/">
           <h1>Logo</h1>
-        </NavLink>
+        </NavLogo>
         <NavMenu>
-          <NavLink to="/Posts">
+          <NavLink to="/">
             <h1>Main</h1>
           </NavLink>
           <NavLink to="/Services">

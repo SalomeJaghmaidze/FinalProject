@@ -14,6 +14,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: flex-start;
   padding: 0.5rem;
+  z-index: 9;
 
   @media screen and (max-width: 1008px) {
     position: relative;
@@ -40,6 +41,19 @@ export const NavLink = styled(Link)`
     border-radius: 30px;
   }
 `;
+
+export const NavLogo = styled(Link)`
+color: #000000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  height: 100% auto;
+  cursor: pointer;
+  width: 200px;
+  justify-content: center;
+  font-size: 11px;
+`
 
 export const Bars = styled(FaBars)`
   display: none;
