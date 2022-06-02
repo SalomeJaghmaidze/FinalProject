@@ -10,28 +10,22 @@ import {
   Close,
   Img,
   Description,
-} from "./PostElements";
+} from "./PostStyles";
 
-const PostModal = () => {
-    const [posts, setPosts] = useState([]);
-    const [modal, setModal] = useState(false);
-  
-    const closeModal = () => {
-    setModal(!modal);
-  };
+const PostModal = (props) => {
   return (
     <div>
-      {modal && (
+      {props.show && (
         <Modal>
           <Overlay>
             <Box>
               <Header>
-                <Heading>{newPost.title}</Heading>
-                <Close onClick={closeModal}>+</Close>
+                <Heading>{props.data.title}</Heading>
+                <Close onClick={props.onClose}>+</Close>
               </Header>
               <Content>
-                <Img src={newPost.image}></Img>
-                <Description>{newPost.description}</Description>
+                <Img src={props.data.image}></Img>
+                <Description>{props.data.description}</Description>
               </Content>
             </Box>
           </Overlay>

@@ -1,4 +1,4 @@
-import { Button } from "./ServiceStyles";
+import { Button } from "./MainStyles";
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { storage } from "../../firebase";
@@ -40,19 +40,15 @@ const FormModal = (props) => {
     storage
       .ref(`/images/${image.name}`)
       .put(image)
-      .on(
-        "state_changed",
-        function (res) {
-          let url = "https://firebasestorage.googleapis.com/v0/b/services-f844e.appspot.com/o/images%2F";
-          let image = url + res.ref.name + "?alt=media";
-          data.image = image;
-          props.services(data);
-
-        },
-        alert
-      );
-      openServiceForm();
-     reset();
+      .on("state_changed", function (res) {
+        let url =
+          "https://firebasestorage.googleapis.com/v0/b/services-f844e.appspot.com/o/images%2F";
+        let image = url + res.ref.name + "?alt=media";
+        data.image = image;
+        props.services(data);
+      });
+    openServiceForm();
+    reset();
   };
 
   const [modal, setModal] = useState(false);

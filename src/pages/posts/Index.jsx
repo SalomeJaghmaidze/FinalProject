@@ -1,14 +1,51 @@
 import React from "react";
-import Banners from "../../components/banner/Banner";
-import AllPosts from "./AllPosts";
+import { useEffect, useState } from "react";
+import Banner from "./Banner";
+import PostModal from "./PostModal";
+import { Container } from "./PostStyles";
+import PostCard from "./PostCard";
 
 const Posts = () => {
-  return (
-    <div>
-      <Banners></Banners>
+  const [posts, setPosts] = useState([]);
+  const [modal, setModal] = useState(false);
+  const [newPost, setNewPost] = useState();
 
-      <AllPosts></AllPosts>
-    </div>
+  useEffect(() => {
+    fetch(
+      "https://api.npoint.io/44c1c313d40c0811ad19?fbclid=IwAR1ghPZYf9Jz13-DNSFMx3u9NSvg755XlHUd9ls8WtpVsq3KbY2NmxP-sKA"
+    )
+      .then((response) => response.json())
+      .then((data) => setPosts(data));
+  }, []);
+
+  const HandlerPopup = (post) => {
+    setNewPost(post);
+    setModal(post);
+  };
+
+  const closeModal = () => {
+    setModal(!modal);
+  };
+  return (
+    <>
+      <Banner></Banner>
+      <Container>
+        {posts.map((post, index) => {
+          return (
+            <PostCard
+              key={index}
+              data={post}
+              handlerPopup={() => HandlerPopup(post)}
+            ></PostCard>
+          );
+        })}
+        <PostModal
+          data={newPost}
+          onClose={() => closeModal()}
+          show={modal}
+        ></PostModal>
+      </Container>
+    </>
   );
 };
 

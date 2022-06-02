@@ -2,15 +2,7 @@ import React from "react";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import {
-  Container,
-  Row,
-  Col,
-  Header,
-  List,
-  Item,
-  Link,
-} from "./FooterElements";
+import { Container, Row, Col, Header, List, Item, Link } from "./FooterStyles";
 
 const Footer = () => {
   return (
@@ -20,10 +12,10 @@ const Footer = () => {
           <Header>Company</Header>
           <List>
             <Item>
-              <Link href="/Posts">Posts</Link>
+              <Link to="/Posts">Posts</Link>
             </Item>
             <Item>
-              <Link href="/Services">Services</Link>
+              <Link to="/Services">Services</Link>
             </Item>
           </List>
         </Col>
@@ -32,10 +24,10 @@ const Footer = () => {
           <Header> Contact info </Header>
           <List>
             <Item>
-              <Link href="#">Email us</Link>
+              <Link to="#">Email us</Link>
             </Item>
             <Item>
-              <Link href="#">FAQ</Link>
+              <Link to="#">FAQ</Link>
             </Item>
           </List>
         </Col>
@@ -44,7 +36,7 @@ const Footer = () => {
           <Header> Career </Header>
           <List>
             <Item>
-              <Link href="#">Vacancy</Link>
+              <Link to="#">Vacancy</Link>
             </Item>
           </List>
         </Col>
@@ -53,17 +45,17 @@ const Footer = () => {
           <Header> Follow us</Header>
           <List>
             <Item>
-              <Link href="#">
+              <Link to="#">
                 <FaTwitter></FaTwitter>
               </Link>
             </Item>
             <Item>
-              <Link href="#">
+              <Link to="#">
                 <FaLinkedin></FaLinkedin>
               </Link>
             </Item>
             <Item>
-              <Link href="#">
+              <Link to="#">
                 <FaFacebook></FaFacebook>
               </Link>
             </Item>

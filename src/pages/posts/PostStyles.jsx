@@ -6,11 +6,9 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
-  
 
   @media (max-width: 1007px) {
     grid-template-columns: 1fr;
-  
   }
 `;
 
@@ -82,7 +80,7 @@ export const CardImgSpace = styled.div`
   }
 `;
 
-export const Cardview = styled.div`
+export const CardView = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;

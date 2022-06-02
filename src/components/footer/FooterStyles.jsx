@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.footer`
@@ -57,7 +58,7 @@ export const List = styled.ul`
 
 export const Item = styled.li``;
 
-export const Link = styled.a`
+export const Link = styled(NavLink)`
   text-decoration: none;
   color: black;
   text-align: left;

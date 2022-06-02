@@ -4,7 +4,7 @@ import FormModal from "./FormModal";
 import { ServiceCard } from "./ServiceCard";
 import Servicelist from "./ServiceList.json";
 import "./Form.css";
-import { Container } from "./Styles";
+import { Container } from "./MainStyles";
 
 const Services = () => {
   const [services, setService] = useState(Servicelist);

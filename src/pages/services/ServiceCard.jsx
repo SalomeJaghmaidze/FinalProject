@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardImgSpace,
   Image,
-} from "./Styles";
+} from "./MainStyles";
 
 export const ServiceCard = (props) => {
   return (

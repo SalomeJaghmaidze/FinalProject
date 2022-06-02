@@ -8,7 +8,7 @@ export const Modal = styled.div`
   bottom: 0;
   position: fixed;
   z-index: 99999;
-  overflow-y:scroll;
+  overflow-y: scroll;
   max-height: 100vh;
 `;
 

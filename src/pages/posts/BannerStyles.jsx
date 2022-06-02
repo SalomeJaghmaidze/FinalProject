@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import banner from "../imgs/banner.jpg";
 
 export const Banner = styled.div`
-  background-image: url(${banner});
+  background-image: url(/imgs/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

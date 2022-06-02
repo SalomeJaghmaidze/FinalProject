@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Nav, NavLink, NavMenu, NavHeader, NavLogo } from "./HeaderElements";
+import { Nav, NavLink, NavMenu, NavHeader, NavLogo } from "./HeaderStyles";
 import { Burger } from "./burger/Burger";
 import { Menu } from "./menu/Menu";
 
