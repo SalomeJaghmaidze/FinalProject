@@ -13,7 +13,7 @@ export const Banner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
+  // border-radius: 15px;
   // margin-left: -50vw;
   // margin-right: -50vw;
   // filter: blur(px);

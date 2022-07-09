@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  margin: auto;
+export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 70px;
@@ -10,6 +9,11 @@ export const Container = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+
+export const Container = styled.div`
+width: 90%; 
+margin: auto;
+`
 
 export const Card = styled.div`
  height:250px;

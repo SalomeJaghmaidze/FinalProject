@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
+export const Container = styled.div`
+ width: 90%;
+ margin: auto;
+`
 export const NavHeader = styled.div`
  margin-top: 15px;
   @media screen and (max-width: 1008px) {

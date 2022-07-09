@@ -4,7 +4,7 @@ import FormModal from "./FormModal";
 import { ServiceCard } from "./ServiceCard";
 import Servicelist from "./ServiceList.json";
 import "./Form.css";
-import { Container } from "./MainStyles";
+import { Container, Content } from "./MainStyles";
 
 const Services = () => {
   const [services, setService] = useState(Servicelist);
@@ -16,8 +16,9 @@ const Services = () => {
   };
   return (
     <>
+    <Container>
       <FormModal services={addService}></FormModal>
-      <Container>
+      <Content>
         {services.map((service, index) => {
           return (
             <ServiceCard
@@ -28,6 +29,7 @@ const Services = () => {
             ></ServiceCard>
           );
         })}
+      </Content>
       </Container>
     </>
   );

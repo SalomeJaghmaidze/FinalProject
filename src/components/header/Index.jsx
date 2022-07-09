@@ -7,6 +7,7 @@ import {
   NavLogo,
   Links,
   BurgerDiv,
+  Container
 } from "./HeaderStyles";
 import { Burger } from "./burger/Burger";
 import { Menu } from "./menu/Menu";
@@ -16,6 +17,7 @@ const Header = () => {
   const node = React.useRef();
 
   return (
+    <Container>
     <NavHeader>
       <Nav>
         <div ref={node}>
@@ -41,6 +43,7 @@ const Header = () => {
         </NavMenu>
       </Nav>
     </NavHeader>
+    </Container>
   );
 };
 

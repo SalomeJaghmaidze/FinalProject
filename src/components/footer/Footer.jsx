@@ -11,28 +11,16 @@ import {
   Item,
   Link,
   Content,
+  Info
 } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <Container>
-      <div><img src="/imgs/companyLogo.png" alt="image" /></div>
       <Content>
-        <Row>
-          <Col>
-            <Header>Company</Header>
-            <List>
-              <Item>
-                <Link to="/">Posts</Link>
-              </Item>
-              <Item>
-                <Link to="/Services">Services</Link>
-              </Item>
-            </List>
-          </Col>
-
-          <Col>
-            <Header> Follow us</Header>
+      <Row>
+      <Col>
+            <Header> Contact</Header>
             <List>
               <Item>
                 <Link to="#">
@@ -51,8 +39,8 @@ const Footer = () => {
               </Item>
             </List>
           </Col>
-        </Row>
-        <div><p>Copyright &copy; Salome Jaghmaidze</p></div>
+      </Row>
+      <p>Copyright &copy; Salome Jaghmaidze</p>
       </Content>
     </Container>
   );

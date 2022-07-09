@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
+  width: 90%;
 
   @media (max-width: 1007px) {
     grid-template-columns: 1fr;
@@ -12,9 +13,10 @@ export const Container = styled.div`
 `;
 
 export const HeaderText = styled.h3`
-text-align: left;
+text-align: center;
 font-size: 25px;
-margin-top: 40px;
+margin-top: 60px;
+margin-bottom: 100px;
 border-bottom: 2px solid #AF9377;
 font-family: 'Sora',sans-serif;
 padding-bottom: 15px;
