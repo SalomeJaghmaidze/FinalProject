@@ -86,7 +86,7 @@ export const InputTitle = styled.input`
   border: none;
   border-bottom: 2px solid #dedede;
   padding: 8px 10px;
-  
+
   :focus {
     outline: none;
   }

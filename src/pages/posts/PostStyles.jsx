@@ -9,54 +9,53 @@ export const Container = styled.div`
 
   @media (max-width: 1007px) {
     grid-template-columns: 1fr;
+    margin-top: 20px;
   }
 `;
 
 export const HeaderText = styled.h3`
-text-align: center;
-font-size: 25px;
-margin-top: 60px;
-margin-bottom: 100px;
-border-bottom: 2px solid #AF9377;
-font-family: 'Sora',sans-serif;
-padding-bottom: 15px;
-color: #2C2640;
-font-style: italic;
-`
+  text-align: center;
+  font-size: 25px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #af9377;
+  font-family: "Sora", sans-serif;
+  padding-bottom: 15px;
+  color: #2c2640;
+  font-style: italic;
+
+  @media (max-width: 1007px) {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+`;
 
 export const Card = styled.div`
- max-height:500px;
- height: 250px;
- margin: 10px
- width: 50px;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-//  transition: 0.3s;
- display: flex;
- position: relative;
- padding-right: 20px;
- margin-bottom: 20px;
- flex-direction: column;
-//  border: 1px solid #AF9377;
-	font-size: 18px;
-	overflow: hidden;
-	cursor: pointer;
-	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
-	transition: box-shadow 0.2s ease, 
-  height: 300px;
-	margin-bottom: 40px;
-	border-radius: 10px;
+  max-height: 500px;
+  height: 250px;
+  display: flex;
+  position: relative;
+  padding-right: 20px;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 40px;
+  border-radius: 10px;
 
- &:hover {
-  box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
-	transform: translate(0px, -3px);
+  &:hover {
+    box-shadow: 0 34px 32px -33px rgba(0, 0, 0, 0.18);
+    transform: translate(0px, -3px);
   }
 
   @media screen and (max-width: 640px) {
     display: flex;
     flex-direction: column;
     height: auto;
-    align-items: center;
-}
+    padding: 0;
+  }
 `;
 
 export const CardInfo = styled.div`
@@ -67,6 +66,8 @@ export const CardInfo = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   @media (max-width: 1007px) {
@@ -75,17 +76,20 @@ export const CardInfo = styled.div`
 `;
 
 export const CardDetails = styled.div`
-width: 60%;
-margin-left: 30px;
-margin-bottom: 40px;
-margin-top: 10px;
+  width: 60%;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+
+  @media screen and (max-width: 640px) {
+    width: 90%;
+  }
 `;
 
 export const CardTitle = styled.h1`
   font-size: 20px;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
-  // word-break: break-all;
 `;
 export const CardDescription = styled.p`
   font-size: 14px;
@@ -93,21 +97,20 @@ export const CardDescription = styled.p`
 `;
 
 export const Image = styled.img`
-width: 100%;
-height: 250px;
+  width: 100%;
+  height: 250px;
   object-fit: cover;
 `;
 
 export const CardImgSpace = styled.div`
   display: flex;
   flex-direction: column;
-  // align-items: stretch;
   width: 40%;
 
   @media screen and (max-width: 640px) {
     display: flex;
     align-items: center;
-    margin: 10px 0;
+    width: 100%;
   }
 `;
 
@@ -193,7 +196,6 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border-top: 2px solid #f1f1f1;
   line-height: 4;
   padding-bottom: 25px;
 `;

@@ -1,24 +1,38 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  width: 90%;
+  margin: auto;
+  margin-bottom: 100px;
+`;
+
 export const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 70px;
+  column-gap: 100px;
+  margin-top: 100px;
 
   @media (max-width: 1007px) {
     grid-template-columns: 1fr;
+    margin-top: 20px;
   }
 `;
 
-export const Container = styled.div`
-width: 90%; 
-margin: auto;
-`
+export const HeaderText = styled.h3`
+  text-align: center;
+  font-size: 25px;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  border-bottom: 2px solid #af9377;
+  font-family: "Sora", sans-serif;
+  padding-bottom: 15px;
+  color: #2c2640;
+  font-style: italic;
+`;
 
 export const Card = styled.div`
- height:250px;
- margin: 10px
- width: 50px;
+ height:300px;
+ margin: 10px;
  transition: 0.3s;
  display: flex;
  margin-bottom: 20px;
@@ -46,7 +60,7 @@ export const Card = styled.div`
 
 export const CardInfo = styled.div`
   width: 60%;
-  padding: 20px;
+  padding: 40px;
 
   @media screen and (max-width: 640px) {
     width: 100%;
@@ -65,11 +79,17 @@ export const CardDescription = styled.p`
 
 export const Image = styled.img`
   width: 100%;
-  height:250px;
+  height: 300px;
+  @media screen and (max-width: 640px) {
+    height: auto;
+  }
 `;
 
 export const CardImgSpace = styled.div`
-width: 40%;
+  width: 40%;
+  @media screen and (max-width: 640px) {
+    width: 30%;
+  }
 `;
 
 export const Button = styled.button`

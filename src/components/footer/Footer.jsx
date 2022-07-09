@@ -11,15 +11,14 @@ import {
   Item,
   Link,
   Content,
-  Info
 } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <Container>
       <Content>
-      <Row>
-      <Col>
+        <Row>
+          <Col>
             <Header> Contact</Header>
             <List>
               <Item>
@@ -39,8 +38,8 @@ const Footer = () => {
               </Item>
             </List>
           </Col>
-      </Row>
-      <p>Copyright &copy; Salome Jaghmaidze</p>
+        </Row>
+        <p>Copyright &copy; Salome Jaghmaidze</p>
       </Content>
     </Container>
   );

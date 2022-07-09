@@ -5,7 +5,9 @@ const Banners = () => {
   return (
     <>
       <Banner>
-        <Header>Welcome to our website!</Header>
+        <Header>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </Header>
       </Banner>
     </>
   );

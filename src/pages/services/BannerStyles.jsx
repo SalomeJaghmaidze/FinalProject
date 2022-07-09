@@ -12,6 +12,7 @@ export const Banner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size:100% auto;
 
   @media screen and (max-width: 1008px) {
     height: 20vh;
@@ -20,18 +21,19 @@ export const Banner = styled.div`
   @media screen and (max-width: 640px) {
     height: 10vh;
   }
+
 `;
 
 export const Header = styled.h1`
-  color: #af9377;
+  color: #AF9377;
   font-size: 35px;
 
   @media screen and (max-width: 1008px) {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
   } 
 
   @media screen and (max-width: 640px) {
-    font-size: 16px;
+    font-size: 14px;
   }
-`;
+`

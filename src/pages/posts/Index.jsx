@@ -29,12 +29,10 @@ const Posts = () => {
   return (
     <>
       <Banner></Banner>
-      
-        <HeaderText>
-          Find the latest breaking news and information below.
-        </HeaderText>
-        <Container>
-       
+      <HeaderText>
+        Find the latest breaking news and information below.
+      </HeaderText>
+      <Container>
         {posts.map((post, index) => {
           return (
             <PostCard
@@ -45,12 +43,12 @@ const Posts = () => {
           );
         })}
         <Content>
-        <PostModal
-          data={newPost}
-          onClose={() => closeModal()}
-          show={modal}
-        ></PostModal>
-    </Content>
+          <PostModal
+            data={newPost}
+            onClose={() => closeModal()}
+            show={modal}
+          ></PostModal>
+        </Content>
       </Container>
     </>
   );
