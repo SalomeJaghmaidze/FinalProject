@@ -16,15 +16,15 @@ const PostCard = (props) => {
     <>
       <Card key={props.data.id}>
         <CardInfo>
+        <CardImgSpace>
+            <Image src={props.data.image}></Image>
+          </CardImgSpace>
           <CardDetails>
             <CardTitle>{props.data.title}</CardTitle>
             <CardDescription>{props.data.description}</CardDescription>
           </CardDetails>
-          <CardImgSpace>
-            <Image src={props.data.image}></Image>
-          </CardImgSpace>
+          
         </CardInfo>
-
         <CardView>
           <CardButton onClick={() => props.handlerPopup(props.data)}>
             View Post

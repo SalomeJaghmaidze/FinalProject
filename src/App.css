@@ -11,3 +11,8 @@
 .content {
   min-height: 100vh;
 }
+
+.Container {
+  width: 90%;
+  margin: 0 auto;
+}

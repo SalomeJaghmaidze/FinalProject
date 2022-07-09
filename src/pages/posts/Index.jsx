@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Banner from "./Banner";
 import PostModal from "./PostModal";
-import { Container } from "./PostStyles";
+import { Container, HeaderText } from "./PostStyles";
 import PostCard from "./PostCard";
+
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -29,7 +30,8 @@ const Posts = () => {
   return (
     <>
       <Banner></Banner>
-      <Container>
+    <HeaderText>Find the latest breaking news and information below.</HeaderText>
+        <Container>
         {posts.map((post, index) => {
           return (
             <PostCard
@@ -44,7 +46,8 @@ const Posts = () => {
           onClose={() => closeModal()}
           show={modal}
         ></PostModal>
-      </Container>
+        </Container>
+     
     </>
   );
 };

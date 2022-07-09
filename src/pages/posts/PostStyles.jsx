@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
   margin: 50px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,20 +11,42 @@ export const Container = styled.div`
   }
 `;
 
+export const HeaderText = styled.h3`
+text-align: left;
+font-size: 25px;
+margin-top: 40px;
+border-bottom: 2px solid #AF9377;
+font-family: 'Sora',sans-serif;
+padding-bottom: 15px;
+color: #2C2640;
+font-style: italic;
+`
+
 export const Card = styled.div`
  max-height:500px;
+ height: 250px;
  margin: 10px
  width: 50px;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- transition: 0.3s;
+//  transition: 0.3s;
  display: flex;
  position: relative;
- padding: 20px;
+ padding-right: 20px;
  margin-bottom: 20px;
  flex-direction: column;
+//  border: 1px solid #AF9377;
+	font-size: 18px;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+	transition: box-shadow 0.2s ease, 
+  height: 300px;
+	margin-bottom: 40px;
+	border-radius: 10px;
 
  &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+	transform: translate(0px, -3px);
   }
 
   @media screen and (max-width: 640px) {
@@ -51,27 +72,35 @@ export const CardInfo = styled.div`
   }
 `;
 
-export const CardDetails = styled.div``;
+export const CardDetails = styled.div`
+width: 60%;
+margin-left: 30px;
+margin-bottom: 40px;
+margin-top: 10px;
+`;
 
 export const CardTitle = styled.h1`
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
+  // word-break: break-all;
 `;
 export const CardDescription = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   font-family: "Poppins", sans-serif;
 `;
 
 export const Image = styled.img`
-  width: 180px;
-  margin: 10px;
+width: 100%;
+height: 250px;
+  object-fit: cover;
 `;
 
 export const CardImgSpace = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  // align-items: stretch;
+  width: 40%;
 
   @media screen and (max-width: 640px) {
     display: flex;

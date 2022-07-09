@@ -85,6 +85,11 @@ export const LabelTitle = styled.label`
 export const InputTitle = styled.input`
   border: none;
   border-bottom: 2px solid #dedede;
+  padding: 8px 10px;
+  
+  :focus {
+    outline: none;
+  }
 `;
 
 export const LabelDescription = styled.label`
@@ -93,14 +98,17 @@ export const LabelDescription = styled.label`
   font-family: "Poppins", sans-serif;
 `;
 
-export const InputDescription = styled.input`
+export const InputDescription = styled.textarea`
   width: 100%;
-  height: 150px;
-  padding: 12px 20px;
+  height: 100px;
+  padding: 8px 10px;
   box-sizing: border-box;
   border: 1px solid black;
   background-color: #f8f8f8;
   resize: none;
+  :focus {
+    outline: none;
+  }
 `;
 
 export const LabelImage = styled.label`
@@ -134,6 +142,7 @@ export const SaveBtn = styled.button`
   border: 2px solid #347ab6;
   padding: 15px 24px;
   border-radius: 4px;
+  cursor: pointer;
 `;
 
 export const CloseBtn = styled.button`
@@ -144,4 +153,11 @@ export const CloseBtn = styled.button`
   padding: 15px 24px;
   border-radius: 4px;
   margin-right: 10px;
+  cursor: pointer;
+
+  :hover {
+    background-color: green;
+    border: none;
+    color: white;
+  }
 `;

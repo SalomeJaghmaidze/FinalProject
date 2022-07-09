@@ -24,10 +24,6 @@ import {
 } from "./FormStyles";
 
 const FormModal = (props) => {
-  const [services, setService] = useState([]);
-
-  const [image, setImage] = useState("");
-
   const {
     register,
     handleSubmit,
@@ -92,7 +88,7 @@ const FormModal = (props) => {
                   Description*
                 </LabelDescription>
                 <InputDescription
-                  type="text"
+                  type="textarea"
                   name="description"
                   {...register("description", {
                     required: true,

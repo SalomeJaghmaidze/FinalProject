@@ -3,25 +3,25 @@ import { Link as Link } from 'react-router-dom'
 export const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   background: #3C78DC;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  height: 100vh;
+  height: 100%;
   margin-left: -45px;
   text-align: left;
-  padding: 2rem;
-  position: absolute;
+  padding: 50px;
+  position: fixed;
   top: 0;
   left: 0;
   transition: transform 0.3s ease-in-out;
   
 
   @media (max-width: 640px) {
-      width: 100%;
+      width: 70%;
     }
 
     @media (max-width: 1008px) {
-        width: 70%;
+        width: 40%;
       }
 
   a {
@@ -53,9 +53,11 @@ export const StyledMenu = styled.nav`
 export const LinkNav = styled(Link)`
    font-size: 14px;
    color: white;
+   
 `
 
 export const Page = styled.h1`
    font-size: 16px;
    color: white;
+   
 `

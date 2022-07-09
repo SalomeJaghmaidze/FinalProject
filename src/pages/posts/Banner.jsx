@@ -1,8 +1,15 @@
 import React from "react";
-import { Banner } from "./BannerStyles";
+import { Banner, Header } from "./BannerStyles";
 
 const Banners = () => {
-  return <Banner></Banner>;
+  return (
+  <>
+  <Banner>
+  <Header>Welcome to our website!</Header>
+  </Banner>
+  
+  </>
+  )
 };
 
 export default Banners;

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const StyledBurger = styled.button`
+display: none;
   @media screen and (max-width: 1008px) {
     position: absolute;
-    top: 10%;
-    left: 5px;
+    top: 30%;
+    left: -5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,7 +24,7 @@ export const StyledBurger = styled.button`
     div {
       width: 2rem;
       height: 0.25rem;
-      background: ${({ open }) => (open ? "grey" : "black")};
+      background: ${({ open }) => (open ? "white" : "black")};
       border-radius: 10px;
       transition: all 0.3s linear;
       position: relative;

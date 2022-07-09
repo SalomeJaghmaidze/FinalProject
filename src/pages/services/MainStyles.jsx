@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 70px;
 
   @media (max-width: 1007px) {
     grid-template-columns: 1fr;
@@ -16,14 +15,21 @@ export const Card = styled.div`
  height:250px;
  margin: 10px
  width: 50px;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
  transition: 0.3s;
  display: flex;
- padding: 20px;
  margin-bottom: 20px;
+ font-size: 18px;
+ overflow: hidden;
+ cursor: pointer;
+ box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+ transition: box-shadow 0.2s ease, 
+ height: 300px;
+ margin-bottom: 40px;
+ border-radius: 10px;
 
  &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+	transform: translate(0px, -3px);
   }
 
   @media screen and (max-width: 640px) {
@@ -35,7 +41,8 @@ export const Card = styled.div`
 `;
 
 export const CardInfo = styled.div`
-  width: 80%;
+  width: 60%;
+  padding: 20px;
 
   @media screen and (max-width: 640px) {
     width: 100%;
@@ -53,16 +60,19 @@ export const CardDescription = styled.p`
 `;
 
 export const Image = styled.img`
-  width: 100px;
-  margin: 10px;
+  width: 100%;
+  height:250px;
 `;
 
-export const CardImgSpace = styled.div``;
+export const CardImgSpace = styled.div`
+width: 40%;
+`;
 
 export const Button = styled.button`
   padding: 14px 40px;
   background-color: #116cc9;
   color: #fff;
   border: none;
-  margin: 40px 80px;
+  margin: 40px 0;
+  cursor: pointer;
 `;

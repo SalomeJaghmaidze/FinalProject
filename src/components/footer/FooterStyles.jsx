@@ -3,16 +3,36 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   bottom: 0;
-  width: 100%;
-  background: #3c78dc;
-  padding: 70px 0;
+  background: #2C2640;
+  // border-top-left-radius: 15px;
+  // border-top-right-radius: 15px;
+  padding-top: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100wh;
+  // margin-left: -5vw;
+  // margin-right: -5vw;
+
+  img {
+    width: 80px;
+  }
+
+  p {
+    text-align: center;
+    color: grey;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
 `;
+
+export const Content = styled.div`
+ width: 90%;
+`
 
 export const Row = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
   line-weight: 1.5;
   > * {
     &:last-child ul {
@@ -60,7 +80,7 @@ export const Item = styled.li``;
 
 export const Link = styled(NavLink)`
   text-decoration: none;
-  color: black;
+  color: #fff;
   text-align: left;
   padding: 2px 1px 0;
   font-family: "Poppins", sans-serif;
