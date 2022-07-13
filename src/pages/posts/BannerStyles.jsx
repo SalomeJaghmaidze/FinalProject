@@ -12,6 +12,7 @@ export const Banner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size:100% auto;
 
   @media screen and (max-width: 1008px) {
     height: 20vh;

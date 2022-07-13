@@ -36,7 +36,7 @@ const FormModal = (props) => {
     storage
       .ref(`/images/${image.name}`)
       .put(image)
-      .on("state_changed", function (res) {
+      .then(function(res){
         let url =
           "https://firebasestorage.googleapis.com/v0/b/services-f844e.appspot.com/o/images%2F";
         let image = url + res.ref.name + "?alt=media";
